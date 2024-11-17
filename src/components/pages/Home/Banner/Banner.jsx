@@ -4,18 +4,14 @@ import bgVideo from "../../../../assets/video/bg-video.mp4";
 const Banner = () => {
   return (
     <div className="md:max-h-screen  mx-auto  lg:h-[800px] ">
-      <video
+      <img
         className="object-cover h-[400px] md:h-fit w-screen lg:h-screen  absolute -z-1 top-0  "
-        src={bgVideo}
-        autoPlay
-        loop
-        muted
-      ></video>
+        src={
+          "https://www.abesit.in/wp-content/uploads/2023/07/desktop-banner-abesit.webp"
+        }
+      ></img>
 
-      <div
-        data-aos="fade-up"
-        className="relative  max-w-screen-xl mx-auto lg:top-40 mt-12 md:mt-20 lg:flex items-center my-auto justify-between text-white "
-      >
+      <div className="relative bg-black px-5 max-w-screen-xl mx-auto lg:top-40 mt-12 md:mt-20 lg:flex items-center my-auto justify-between text-white ">
         <div className="text-center">
           <p className=" text-2xl lg:text-6xl md:mb-5">Biggest Tech Event</p>
           <h2 className="md:text-xl">Growing The Global Technology Industry</h2>

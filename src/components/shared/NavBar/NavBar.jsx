@@ -7,7 +7,12 @@ import Loading from "../../Loading/Loading";
 const NavBar = () => {
   const { logOut, user, loading } = useContext(AuthContext);
   if (loading) {
-    return <> <Loading /> </>
+    return (
+      <>
+        {" "}
+        <Loading />{" "}
+      </>
+    );
   }
   const handleLogOut = () => {
     logOut()
@@ -28,7 +33,7 @@ const NavBar = () => {
         <NavLink to="/speakers">Speaker</NavLink>
       </li>
       <li>
-        <NavLink to="/about-us">About Us</NavLink>
+        <NavLink to="/about-us">Team</NavLink>
       </li>
     </>
   );
@@ -64,8 +69,7 @@ const NavBar = () => {
               </ul>
             </div>
             <Link className="flex items-center" to="/">
-              <a className="normal-case text-rose-400 text-5xl py-4">TecH.e</a>
-              <img className="w-12 h-12 rounded-full" src={logo} alt="" />
+              <img src="https://pharmacy.abesit.edu.in/wp-content/uploads/sites/4/2020/09/CN-A4-1-800x276.png" alt="" height={200} width={200} />
             </Link>
           </div>
           <div className="navbar-center  hidden lg:flex gap-5">
@@ -97,8 +101,11 @@ const NavBar = () => {
                     </li>
                     <li>
                       <a className="justify-between mb-5 items-center">
-                        <Link to={`/paymentsReport`}><button className="btn btn-xs mb-2">Payment Reports</button></Link>
-
+                        <Link to={`/paymentsReport`}>
+                          <button className="btn btn-xs mb-2">
+                            Payment Reports
+                          </button>
+                        </Link>
                       </a>
                     </li>
 

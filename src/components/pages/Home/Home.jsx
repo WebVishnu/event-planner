@@ -14,13 +14,10 @@ const Home = () => {
       <div className="md:mb-40">
         <Banner />
       </div>
-
-      <div data-aos="fade-right">
+      <div data-aos="fade-right" className="mt-24">
         <AboutFea />
       </div>
       <Events events={events} />
-
-      <Schedule scheduleData={events} />
       <Spornsor />
     </div>
   );

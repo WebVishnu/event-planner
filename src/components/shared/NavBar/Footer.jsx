@@ -5,7 +5,7 @@ const Footer = () => {
     <div>
       <footer className="footer footer-center  p-4 bg-base-300 fixed bottom-0 text-base-content">
         <aside>
-          <p>Copyright © 2023 - All right reserved by TecH.e</p>
+          <p>Copyright © 2023 - All right reserved by Event planner</p>
         </aside>
       </footer>
     </div>

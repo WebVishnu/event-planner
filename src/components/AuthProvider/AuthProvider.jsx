@@ -28,9 +28,15 @@ const AuthProvider = ({ children }) => {
 
 
 
-  const createUser = (email, password) => {
+  const createUser = async (email, password) => {
     setLoading(true);
-    return createUserWithEmailAndPassword(auth, email, password);
+    try {
+      return await createUserWithEmailAndPassword(auth, email, password);
+    } catch (error) {
+      console.error("Create user error:", error);
+      setLoading(false);
+      throw error; // Re-throw for UI handling
+    }
   };
 
   const signIn = (email, password) => {
